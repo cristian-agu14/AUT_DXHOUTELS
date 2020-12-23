@@ -5,7 +5,7 @@ Feature: Find the hotel in DX HOTEL page
 
   @find-hotel-cheaper
   Scenario Outline: I need to find the cheaper hotel
-    Given I want to open 'dxhoutels' page
+    Given I want to open dxhoutels page
     And I into the location:<location> check in:<checkin> check out:<checkout> rooms:<rooms> adults:<adults> and children:<children>
     When The robot saves the data finded
     And The robot finds the cheaper hotel

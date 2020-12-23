@@ -102,7 +102,7 @@ public class WebDriverFactory {
 
 	public WebDriver onPage(String url) throws FileNotFoundException, IOException {
 		Properties properties = new Properties();
-		properties.load(new FileReader("src/test/resources/urls/urls.properties"));
+		properties.load(new FileReader("src/test/resources/urls.properties"));
 		url = properties.getProperty(url);
 		driver.manage().window().maximize();
 		driver.get(url);

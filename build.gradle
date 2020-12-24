@@ -38,6 +38,7 @@ dependencies {
     compile group: 'net.serenity-bdd', name: 'serenity-screenplay-rest', version:'2.0.60'
     compile group: 'net.serenity-bdd', name: 'serenity-cucumber', version:'1.9.20'
     testCompile group: 'net.serenity-bdd', name: 'serenity-junit', version:'2.0.60'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
 
 }
 

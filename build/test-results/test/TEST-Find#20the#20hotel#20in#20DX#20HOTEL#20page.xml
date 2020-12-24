@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Find the hotel in DX HOTEL page" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-23T22:57:55" hostname="DESKTOP-QA9DR6D" time="49.707">
+  <properties/>
+  <testcase name="I need to find the cheaper hotel" classname="Find the hotel in DX HOTEL page" time="49.707"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 43005
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+dic 23, 2020 5:58:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+]]></system-err>
+</testsuite>

@@ -13,5 +13,5 @@ Feature: Find the hotel in DX HOTEL page
     And check more outcomes
 
     Examples: 
-      | location | checkin    | checkout   | rooms | adults | children |
-      | New York | 12/24/2020 | 12/31/2020 |     1 |     1 |     0    |
+      | location      | checkin    | checkout   | rooms | adults | children |
+      | San Francisco | 12/25/2020 | 12/26/2020 |     1 |      1 |        0 |

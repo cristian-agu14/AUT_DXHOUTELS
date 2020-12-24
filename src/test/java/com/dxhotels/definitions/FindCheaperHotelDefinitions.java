@@ -4,6 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import com.dxhotels.tasks.FindAHotel;
+import com.dxhotels.tasks.GetInfoHotels;
 import com.dxhotels.utils.WebDriverFactory;
 
 import cucumber.api.java.Before;
@@ -39,7 +40,7 @@ public class FindCheaperHotelDefinitions {
 
 	@When("^The robot saves the data finded$")
 	public void theRobotSavesTheDataFinded() {
-
+		theActorInTheSpotlight().attemptsTo(GetInfoHotels.inPage());
 	}
 
 	@When("^The robot finds the cheaper hotel$")

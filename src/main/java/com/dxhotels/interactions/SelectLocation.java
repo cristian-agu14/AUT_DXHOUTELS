@@ -15,7 +15,7 @@ public class SelectLocation implements Interaction {
 	private static String location;
 
 	public SelectLocation(String location) {
-		this.location = location;
+		SelectLocation.location = location;
 	}
 
 	@Override

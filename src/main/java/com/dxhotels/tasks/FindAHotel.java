@@ -1,26 +1,17 @@
 package com.dxhotels.tasks;
 
+import static com.dxhotels.pages.DxHotelsPage.BTN_SEARCH;
+import static com.dxhotels.pages.DxHotelsPage.TXT_CHECK_IN;
+import static com.dxhotels.pages.DxHotelsPage.TXT_CHECK_OUT;
+
+import com.dxhotels.interactions.SelectLocation;
+import com.dxhotels.interactions.SelectNumberOf;
+
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.actions.Hit;
-import net.serenitybdd.screenplay.actions.SelectFromOptions;
-
-import static com.dxhotels.pages.DxHotelsPage.LST_ADULTS;
-import static com.dxhotels.pages.DxHotelsPage.LST_CHILDREN;
-import static com.dxhotels.pages.DxHotelsPage.LST_LOCATION;
-import static com.dxhotels.pages.DxHotelsPage.LST_ROOMS;
-import static com.dxhotels.pages.DxHotelsPage.TXT_CHECK_OUT;
-import static com.dxhotels.pages.DxHotelsPage.BTN_SEARCH;
-
-import org.openqa.selenium.Keys;
-
-import com.dxhotels.interactions.SelectLocation;
-import com.dxhotels.interactions.SelectNumberOf;
-
-import static com.dxhotels.pages.DxHotelsPage.TXT_CHECK_IN;
 
 
 public class FindAHotel implements Task {

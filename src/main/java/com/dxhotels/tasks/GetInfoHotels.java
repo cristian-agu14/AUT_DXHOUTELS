@@ -38,7 +38,7 @@ public class GetInfoHotels implements Task {
 		System.out.println(hotelsList.size());
 		boolean areThereMorePages = true;
 		while (areThereMorePages) {
-			for (int i = 1; i < 4; i++) {
+			for (int i = 1; i <= numHotels; i++) {
 				HotelModel hotel = new HotelModel(null, 0.0);
 				String textValueHotel = (LBL_VALUE_HOTEL.of(i + "").resolveFor(actor).getText()).replaceAll("\\$", "");
 				double valueHotel = Double.parseDouble(textValueHotel);

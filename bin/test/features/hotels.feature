@@ -14,4 +14,4 @@ Feature: Find the hotel in DX HOTEL page
 
     Examples: 
       | location      | checkin    | checkout   | rooms | adults | children |
-      | San Francisco | 12/25/2020 | 12/26/2020 |     1 |      1 |        0 |
+      | San Francisco | 12/27/2020 | 12/28/2020 |     1 |      1 |        0 |

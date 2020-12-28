@@ -1,0 +1,10 @@
+# built application files
+*.xlsx
+# file
+#directory
+.idea/
+target/
+.classpath
+.project
+.settings/
+.gradle/

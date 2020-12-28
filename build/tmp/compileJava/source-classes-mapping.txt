@@ -1,0 +1,32 @@
+com/dxhotels/interactions/SelectLocation.java
+ com.dxhotels.interactions.SelectLocation
+com/dxhotels/models/HotelModel.java
+ com.dxhotels.models.HotelModel
+com/dxhotels/interactions/ScanAllInfo.java
+ com.dxhotels.interactions.ScanAllInfo
+com/dxhotels/exceptions/Exceptions.java
+ com.dxhotels.exceptions.Exceptions
+com/dxhotels/utils/RemembersConstans.java
+ com.dxhotels.utils.RemembersConstans
+com/dxhotels/tasks/SelectCheaper.java
+ com.dxhotels.tasks.SelectCheaper
+com/dxhotels/interactions/SelectCheaperHotel.java
+ com.dxhotels.interactions.SelectCheaperHotel
+com/dxhotels/pages/DxHotelsPage.java
+ com.dxhotels.pages.DxHotelsPage
+com/dxhotels/pages/HotelReservation.java
+ com.dxhotels.pages.HotelReservation
+com/dxhotels/utils/WebDriverFactory.java
+ com.dxhotels.utils.WebDriverFactory
+com/dxhotels/interactions/SelectNumberOf.java
+ com.dxhotels.interactions.SelectNumberOf
+com/dxhotels/tasks/FindAHotel.java
+ com.dxhotels.tasks.FindAHotel
+com/dxhotels/questions/TheTotalToPayIs.java
+ com.dxhotels.questions.TheTotalToPayIs
+com/dxhotels/pages/ResultsPage.java
+ com.dxhotels.pages.ResultsPage
+com/dxhotels/interactions/GetHotelCheaper.java
+ com.dxhotels.interactions.GetHotelCheaper
+com/dxhotels/tasks/GetInfoHotels.java
+ com.dxhotels.tasks.GetInfoHotels

@@ -1,10 +1,16 @@
 package com.dxhotels.definitions;
 
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
+import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+import com.dxhotels.exceptions.Exceptions;
+import com.dxhotels.questions.TheTotalToPayIs;
 import com.dxhotels.tasks.FindAHotel;
 import com.dxhotels.tasks.GetInfoHotels;
+import com.dxhotels.tasks.SelectCheaper;
 import com.dxhotels.utils.WebDriverFactory;
 
 import cucumber.api.java.Before;
@@ -14,7 +20,6 @@ import cucumber.api.java.en.When;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
-import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class FindCheaperHotelDefinitions {
 
@@ -45,17 +50,14 @@ public class FindCheaperHotelDefinitions {
 
 	@When("^The robot finds the cheaper hotel$")
 	public void theRobotFindsTheCheaperHotel() {
-
+		theActorInTheSpotlight().attemptsTo(SelectCheaper.hotel());
 	}
 
-	@Then("^The robot shows the cheaper hotel$")
+	@Then("^The total to pay is correct$")
 	public void theRobotShowsTheCheaperHotel() {
 
-	}
-
-	@Then("^check more outcomes$")
-	public void checkMoreOutcomes() {
-
+		theActorInTheSpotlight().should(
+				seeThat(TheTotalToPayIs.correct()).orComplainWith(Exceptions.class, Exceptions.VALUE_TOTAL_ERROR));
 	}
 
 }

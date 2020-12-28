@@ -9,9 +9,8 @@ Feature: Find the hotel in DX HOTEL page
     And I into the location:<location> check in:<checkin> check out:<checkout> rooms:<rooms> adults:<adults> and children:<children>
     When The robot saves the data finded
     And The robot finds the cheaper hotel
-    Then The robot shows the cheaper hotel
-    And check more outcomes
+    Then The total to pay is correct
 
     Examples: 
-      | location      | checkin    | checkout   | rooms | adults | children |
-      | San Francisco | 12/27/2020 | 12/28/2020 |     1 |      1 |        0 |
+      | location      | checkin  | checkout | rooms | adults | children |
+      | San Francisco | 2/5/2021 | 2/6/2021 |     1 |      1 |        0 |

@@ -22,38 +22,38 @@ public class SelectLocation implements Interaction {
 	public <T extends Actor> void performAs(T actor) {
 
 		int end = 0;
-
+		location = location.toUpperCase();
 		switch (location) {
-		case "Los Angeles":
+		case "LOS ANGELES":
 			end = 1;
 			break;
 
-		case "San Francisco":
+		case "SAN FRANCISCO":
 			end = 2;
 			break;
-		case "Las Vegas":
+		case "LAS VEGAS":
 			end = 3;
 			break;
-		case "Honolulu":
+		case "HONOLULU":
 			end = 4;
 			break;
-		case "New York":
+		case "NEW YORK":
 			end = 5;
 			break;
 
-		case "Nassau":
+		case "NASSAU":
 			end = 6;
 			break;
-		case "Paris":
+		case "PARIS":
 			end = 7;
 			break;
-		case "London":
+		case "LONDON":
 			end = 8;
 			break;
-		case "Rome":
+		case "ROME":
 			end = 9;
 			break;
-		case "Hamburg":
+		case "HAMBURG":
 			end = 10;
 			break;
 		default:
@@ -63,7 +63,7 @@ public class SelectLocation implements Interaction {
 		for (int i = 0; i < end; i++) {
 			actor.attemptsTo(Hit.the(Keys.DOWN).into(LST_LOCATION));
 		}
-		actor.attemptsTo(Hit.the(Keys.ENTER).into(LST_LOCATION));		
+		actor.attemptsTo(Hit.the(Keys.ENTER).into(LST_LOCATION));
 
 	}
 

@@ -3,8 +3,8 @@
   <properties/>
   <system-out><![CDATA[
 1 Scenarios (?[32m1 passed?[0m)
-6 Steps (?[32m6 passed?[0m)
-0m50,372s
+5 Steps (?[32m5 passed?[0m)
+1m7,660s
 
 ]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".

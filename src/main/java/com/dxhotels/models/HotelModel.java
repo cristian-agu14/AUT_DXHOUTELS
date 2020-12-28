@@ -1,10 +1,10 @@
 package com.dxhotels.models;
 
-public class HotelModel {
+public class HotelModel implements Comparable<HotelModel> {
 
 	private String name;
 	private double valuePerNight;
-	
+
 	public HotelModel(String name, double valuePerNight) {
 		this.name = name;
 		this.valuePerNight = valuePerNight;
@@ -25,8 +25,16 @@ public class HotelModel {
 	public void setValuePerNight(double valuePerNight) {
 		this.valuePerNight = valuePerNight;
 	}
-	
-	
-	
-	
+
+	@Override
+	public int compareTo(HotelModel hotel) {
+		if (this.valuePerNight > hotel.valuePerNight) {
+			return 1;
+		}
+		if (this.valuePerNight < hotel.valuePerNight) {
+			return -1;
+		}
+		return 0;
+	}
+
 }
